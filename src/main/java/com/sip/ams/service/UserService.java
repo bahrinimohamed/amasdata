@@ -36,7 +36,9 @@ public class UserService {
         //user.setRoles(new HashSet<Role>(Arrays.asList(role1,role2)));
         user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
         userRepository.save(user);
-    }
+        user.setActive(1);
 
+    }
+   
 }
 
